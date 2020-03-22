@@ -1,16 +1,20 @@
-# oppish_translator
+# Oppish Translate
+Small clone of Google translate but only translating between the Op-language (Oppish) and English. 
 
-A new Flutter project.
+#### Features
+-  Very similar look and feel to Google translate
+-  fast
+-  lightweight
+-  Speech to text (English) capability
+-  Text to speech (English + Oppish) capability
+-  Adjust speech rate and pitch
+-  Copy a translation to your clipboard
+-  Save your favourite translations
+-  Small trivia section
 
-## Getting Started
+#### Dependencies
+Uses `flutter_tts` and `speech_to_text` for basic audio capabilities. The Oppish text to speech method is built using the aforementioned packages.
 
-This project is a starting point for a Flutter application.
+`url_launcher` provides the `send feedback` functionality and I used `shared_preferences` to locally store the users favourite translations via simple `List<String>`. 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Lastly, I used ❤️ `provider` ❤️  for some state management. 
